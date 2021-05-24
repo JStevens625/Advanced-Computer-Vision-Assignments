@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-cap = cv2.VideoCapture('barriers.avi')
+cap = cv2.VideoCapture('Data/Assignment-1/barriers.avi')
 screenWidth = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 screenHeight = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 frameCounter = 0 # counts frame to loop video

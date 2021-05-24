@@ -4,20 +4,20 @@ from matplotlib import pyplot as plt
 from sklearn.cluster import MeanShift
 
 #Image Reading
-meanshiftimg1 = cv2.imread('input data/Mean shift/S00-150x150.png')
-meanshiftimg2 = cv2.imread('input data/Mean shift/S02-150x150.png')
-meanshiftimg3 = cv2.imread('input data/Mean shift/S03-150x150.png')
-meanshiftimg4 = cv2.imread('input data/Mean shift/set1Seq2_L-150x150.png')
-meanshiftimg5 = cv2.imread('input data/Mean shift/set2Seq1_L-150x150.png')
+meanshiftimg1 = cv2.imread('Data/Assignment-3/Mean shift/S00-150x150.png')
+meanshiftimg2 = cv2.imread('Data/Assignment-3/Mean shift/S02-150x150.png')
+meanshiftimg3 = cv2.imread('Data/Assignment-3/Mean shift/S03-150x150.png')
+meanshiftimg4 = cv2.imread('Data/Assignment-3/Mean shift/set1Seq2_L-150x150.png')
+meanshiftimg5 = cv2.imread('Data/Assignment-3/Mean shift/set2Seq1_L-150x150.png')
 
-OTSU2_1 = cv2.imread('input data/OTSU 2 classes/andreas_L-150x150.png',0)
-OTSU2_2 = cv2.imread('input data/OTSU 2 classes/edge_L-150x150.png',0)
-OTSU2_3 = cv2.imread('input data/OTSU 2 classes/south_L-150x150.png',0)
+OTSU2_1 = cv2.imread('Data/Assignment-3/OTSU 2 classes/andreas_L-150x150.png',0)
+OTSU2_2 = cv2.imread('Data/Assignment-3/OTSU 2 classes/edge_L-150x150.png',0)
+OTSU2_3 = cv2.imread('Data/Assignment-3/OTSU 2 classes/south_L-150x150.png',0)
 
-OTSUMult_1 = cv2.imread('input data/OTSU multiple classes/blocks_L-150x150.png',0)
-OTSUMult_2 = cv2.imread('input data/OTSU multiple classes/S01-150x150.png',0)
-OTSUMult_3 = cv2.imread('input data/OTSU multiple classes/S04-150x150.png',0)
-OTSUMult_4 = cv2.imread('input data/OTSU multiple classes/S05-150x150.png',0)
+OTSUMult_1 = cv2.imread('Data/Assignment-3/OTSU multiple classes/blocks_L-150x150.png',0)
+OTSUMult_2 = cv2.imread('Data/Assignment-3/OTSU multiple classes/S01-150x150.png',0)
+OTSUMult_3 = cv2.imread('Data/Assignment-3/OTSU multiple classes/S04-150x150.png',0)
+OTSUMult_4 = cv2.imread('Data/Assignment-3/OTSU multiple classes/S05-150x150.png',0)
 
 def histogram(image):
     histogram = cv2.calcHist([image],[0],None,[256],[0,256])
